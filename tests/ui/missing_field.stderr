@@ -1,0 +1,7 @@
+error[E0063]: missing field `t` in initializer of `main::T`
+  --> $DIR/missing_field.rs:18:5
+   |
+18 |     init!(v, T { s: S { a: f1 } }, f1 = foo(true));
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ missing `t`
+   |
+   = note: this error originates in a macro (in Nightly builds, run with -Z macro-backtrace for more info)

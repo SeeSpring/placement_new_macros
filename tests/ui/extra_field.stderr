@@ -1,0 +1,13 @@
+error[E0560]: struct `main::T` has no field named `s`
+  --> $DIR/extra_field.rs:10:24
+   |
+10 |     init!(v, T { t: 0, s: 0 });
+   |                        ^ `main::T` does not have this field
+   |
+   = note: available fields are: `t`
+
+error[E0609]: no field `s` on type `main::T`
+  --> $DIR/extra_field.rs:10:24
+   |
+10 |     init!(v, T { t: 0, s: 0 });
+   |                        ^ help: a field with a similar name exists: `t`

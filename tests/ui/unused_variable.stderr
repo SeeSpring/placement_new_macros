@@ -1,0 +1,11 @@
+error: unused variable: `f1`
+  --> $DIR/unused_variable.rs:10:26
+   |
+10 |     init!(v, T { t: 0 }, f1 = 0);
+   |                          ^^ help: if this is intentional, prefix it with an underscore: `_f1`
+   |
+note: the lint level is defined here
+  --> $DIR/unused_variable.rs:4:8
+   |
+4  | #[deny(unused_variables)]
+   |        ^^^^^^^^^^^^^^^^
